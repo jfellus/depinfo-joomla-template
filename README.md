@@ -9,7 +9,7 @@ Joomla Template for depinfo.u-cergy.fr
 I modified the **mod_articles_category** module to add filtering by tag. 
 For this, i modified
 * helper.php :
-````
+````php
           // @jfellus filter items by tag
           foreach ($items as $k => &$item)
           {
@@ -21,7 +21,7 @@ For this, i modified
 
 * mod_articles_category.xml : (to add a new `tag_filter` field in the module's parameters)
 
-````
+````xml
                                 <field
                                         name="tag_filter"
                                         type="sql"
